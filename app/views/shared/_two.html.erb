@@ -1,0 +1,31 @@
+<section id="two"> 
+	
+	<div id="box">
+		
+		<p>
+			A project to collect and curate some of the best in <br> woodland photography from around the world.
+		</p>
+			
+		<div id="button">
+			<a class="scroll" href="#2">READ MORE</a>
+			
+		<script>	
+			$(".scroll").click(function(event){
+			     event.preventDefault();
+			     //calculate destination place
+			     var dest=0;
+			     if($(this.hash).offset().top > $(document).height()-$(window).height()){
+			          dest=$(document).height()-$(window).height();
+			     }else{
+			          dest=$(this.hash).offset().top;
+			     }
+			     //go to destination
+			     $('html,body').animate({scrollTop:dest}, 700,'swing');
+			 });
+		</script>
+			
+		</div>
+		
+	</div>
+		
+</section>
