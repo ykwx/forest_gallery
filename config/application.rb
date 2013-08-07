@@ -20,7 +20,6 @@ module TestApp
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     # Precompile all assets, except those that start with underscore
-      config.assets.precompile << /(^[^\/]|\/[^])[^\/]*$/
     # Enable the asset pipeline
          config.assets.enabled = true
          config.assets.version = '1.0'
