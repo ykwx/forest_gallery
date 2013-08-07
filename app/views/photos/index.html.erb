@@ -1,0 +1,14 @@
+<ul> 
+
+<% @photos.each do |img| %>
+	<li>	
+		<%= img.first_name %>
+		<%= img.last_name %>
+		<%= img.city %>
+		<%= img.country %>
+		<%= image_tag(img.image, alt: img.first_name, width:"600", height:"250") %>
+	</li>
+	
+<% end %>
+	
+</ul>	
