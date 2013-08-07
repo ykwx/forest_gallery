@@ -71,13 +71,39 @@ h6, .font {
 
 
 #three {
-	height: 600px;
+	height: 730px;
 	width: 1080px;
 }
 
 
+#recent_photos {
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 20px;	
+}
+
+.recent {
+	width: 48%;
+	text-align: center;
+	display: block;
+	float: left;
+	margin: 1%;
+	img {
+		max-width: 100%;
+		opacity: 0.7;
+	}
+}
+
+.recent a:hover {
+	opacity: 0.5;
+}
+
+.clear_fix {
+	clear: both;
+}
+
 #four {
-	height: 550px;
+	height: 520px;
 	width: 1080px;
 	background-color: #f5f5f5; 
 }
@@ -123,7 +149,7 @@ h6, .font {
 		src: url('Adobe-Garamond-Pro.ttf')
 }
 
-#button {
+.button {
 	background-color: rgba(0, 0, 0, 0.8);
 	width: 120px;
 	height: 42px;
@@ -133,18 +159,18 @@ h6, .font {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	top: 10%;
+	top: 6%;
 	margin-top: 0px;
 	padding-top: 2px;
 	font-family: Oswald-Light;
 }
 
-#button a {
+.button a {
 	text-decoration: none;
 	color: #ffffff;
 }
 
-#button a:hover {
+.button a:hover {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.9);
 }
@@ -175,26 +201,6 @@ h6, .font {
 	text-decoration: none;
 	color: #000000;
 }
-
-#recent_photos {
-	width: 60%;
-	margin: 0 auto;	
-}
-
-.recent {
-	width: 48%;
-	text-align: center;
-	display: block;
-	float: left;
-	margin: 1%;
-	img {
-		max-width: 100%;
-	}
-}
-
-
-
-
 
 
 
