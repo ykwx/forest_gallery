@@ -29,6 +29,28 @@ h3 {
 }
 
 
+h4 { 
+	text-align: center;
+	font-family: EB Garamond;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	display: inline-block;
+}
+
+
+h6, .font {
+	font-family: Oswald-Light;
+	text-align: center;
+	font-size: 20px;
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+
 //////////// Sections //////////// 
 
 #header {
@@ -141,13 +163,6 @@ h3 {
 }
 
 
-#box p { 
-	text-align: center;
-	font-family: EB Garamond;
-	font-size: 18px;
-	font-style: italic;
-}
-
 #six p { 
 	text-align: center;
 	font-family: EB Garamond;
@@ -253,13 +268,10 @@ h3 {
 	margin-top: 25px;
 }
 
-#description h3 {
-	font-family: Oswald-Light;
-	text-align: center;
-	font-size: 18px;
-	line-height: 10px;
-	padding-top: 8px;
-	padding-bottom: 20px;
+#description h4 {
+	padding-top: 20px;
+	padding-bottom: 5px;
+	margin: 0px;
 }
 
 .image_output {
@@ -282,11 +294,12 @@ h3 {
 
 #navigation a {
 	font-family: Oswald-Light;
-	font-size: 50px;
+	font-size: 40px;
+	font-style: none;
 	color: #000000;
 	text-decoration: none;
 	position: absolute;
-	bottom: 50px;
+	top: 275px;
 }
 
 #navigation a:hover {
@@ -304,6 +317,70 @@ h3 {
 	left: 40px;
 }
 
+#list {
+	background-color: #f5f5f5;
+	width: 1080px;
+	margin: auto;
+	margin-top: -16px;
+	margin-bottom: -16px;
+}
+
+#list ul {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+#list li {
+	list-style: none;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	height: 450px;
+	width: 700px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.image, .image_info {
+	position: absolute;
+	top: 0px;
+}
+
+.image {
+	left: 0px;
+}
+
+.image_info {
+	text-align: center;
+	display: table-row;
+	width: 700px;
+	height: 450px;
+	background: rgba(255, 255, 255, 0.6);
+	pointer-events: none;
+	opacity: 0;
+	-webkit-transition: all .3s ease-in-out;
+  	-moz-transition: all .3s ease-in-out;
+  	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+
+.image_info {
+	h4, h6 {
+		display: table-cell;
+		vertical-align: middle;
+		width: 700px;
+		height: 450px;
+		line-height: 1.5;
+	}
+}
+
+.active {
+	opacity: 1;
+	
+}
 
 
 

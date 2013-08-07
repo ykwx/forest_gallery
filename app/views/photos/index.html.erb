@@ -1,16 +1,28 @@
-<ul> 
 
-<% @photos.each do |img| %>
-	<li>	
-		<%= img.first_name %>
-		<%= img.last_name %>
-		<%= img.city %>
-		<%= img.country %>
-		<%= link_to image_tag(img.image, alt: img.first_name, width:"600", height:"250"), photo_path(img) %>
-	</li>
+<div id="list">
+	
+	<ul> 
+
+	<% @photos.each do |img| %>
+		<li>
+			<div class="image">	
+				<%= link_to image_tag(img.image, alt: img.first_name, width:"700", height:"450"), photo_path(img) %>
+			</div>
+			
+			<div class="image_info">
+				<h4>
+					<%= img.first_name %>
+					<%= img.last_name %>
+				<br>			
+					<span class="font"><%= img.city %>, 
+					<%= img.country %></span>
+				</h4>
+			</div>	
+		</li>
 	
 	
+	<% end %>
 	
-<% end %>
+	</ul>
 	
-</ul>	
+</div>	
