@@ -8,13 +8,9 @@
 </head>
 <body>
 	
-	<%= render "shared/one" %>
-	<%= render "shared/two" %>
-	<%= render "shared/three" %>
-	<%= render "shared/four" %>
-	<%= render "shared/five" %>
-	<%= render "shared/six" %>
-	<%= render "shared/footer" %>
+		<%= render "layouts/header"%>
+		<%= yield %>
+		<%= render "layouts/footer"%>
 
 </body>
 </html>

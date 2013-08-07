@@ -1,5 +1,7 @@
 TestApp::Application.routes.draw do
-  resources :pages
-  root :to => 'pages#index'
+  
+  resources :static_pages
+  root to: "static_pages#index"
+
   
 end
