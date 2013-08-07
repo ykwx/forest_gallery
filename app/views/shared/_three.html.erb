@@ -6,4 +6,22 @@
 		RECENT SUBMISSIONS
 	</h3>
 
+	<div id="recent_photos">
+
+		<% @photos.each do |img| %>
+	
+			<div class="recent">
+				<%= link_to image_tag(img.image, alt: img.first_name, width:"350", height:"200"), photo_path(img) %>
+			</div>
+		
+		<% end %>
+	
+	</div>
+	
+	<!-- <div id="button">
+		<a class="scroll" href="#2">READ MORE</a>
+	</div> -->
+	
+	
+	
 </section>
