@@ -2,15 +2,17 @@
 <html>
 <head>
   <title>Forest</title>
-  <%= stylesheet_link_tag    "application", media: "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+	<%= stylesheet_link_tag    "application", media: "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<%= filepicker_js_include_tag %>
+
 </head>
 <body>
-	
+	<div id="main">
 		<%= render "layouts/header"%>
 		<%= yield %>
 		<%= render "layouts/footer"%>
-
+	</div>
 </body>
 </html>

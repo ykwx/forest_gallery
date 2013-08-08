@@ -24,6 +24,6 @@ module TestApp
          config.assets.enabled = true
          config.assets.version = '1.0'
          config.assets.initialize_on_precompile = false
-  
+         config.filepicker_rails.api_key = "A2X0H5zmfR52cd6X4lPo8z"
   end
 end

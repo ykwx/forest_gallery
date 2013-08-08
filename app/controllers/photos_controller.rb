@@ -9,7 +9,12 @@ class PhotosController < ApplicationController
   end
   
   def create
-    @photo = Photo.new(params[:photo])
+    @photo = Photo.new(photo_params)
+    if @photo.save
+      redirect_to root_path
+    else 
+      "new"
+    end
   end
   
   def show
@@ -31,5 +36,13 @@ class PhotosController < ApplicationController
   def destroy
     @photo = Photo.find(params[:id]).destroy
   end
+  
+  private
+
+  def photo_params
+    params.require(:photo).permit(:first_name, :last_name, :country, :city, :twitter, :website_url, :email_address, :image)
+  end
 
 end
+
+
