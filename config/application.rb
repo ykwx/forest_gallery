@@ -25,5 +25,11 @@ module TestApp
          config.assets.version = '1.0'
          config.assets.initialize_on_precompile = false
          config.filepicker_rails.api_key = "A2X0H5zmfR52cd6X4lPo8z"
+         # Add the fonts path
+         config.assets.paths << "#{Rails.root}/app/assets/fonts"
+
+         # Precompile additional assets
+         config.assets.precompile += %w( .svg .eot .woff .ttf )
+         
   end
 end
