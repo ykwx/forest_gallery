@@ -163,11 +163,11 @@ h6, .font {
 
 @font-face {
     font-family: 'oswaldlight';
-    src: font-url('oswald-light-webfont.eot');
-    src: font-url('oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
-         font-url('oswald-light-webfont.woff') format('woff'),
-         font-url('oswald-light-webfont.ttf') format('truetype'),
-         font-url('oswald-light-webfont.svg#oswaldlight') format('svg');
+    src: font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.eot');
+    src: font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.eot+?#iefix') format('embedded-opentype'),
+         font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.woff') format('woff'),
+         font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.ttf') format('truetype'),
+         font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.svg#oswaldlight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -203,7 +203,7 @@ h6, .font {
 #box {
 	background-color: rgba(255, 255, 255, 0.8);
 	height: 150px;
-	width: 550px;
+	width: 520px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
