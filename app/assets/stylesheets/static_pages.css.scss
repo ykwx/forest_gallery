@@ -159,22 +159,22 @@ h6, .font {
 	background-color: rgba(0, 0, 0, 0.8);
 	width: 120px;
 	height: 42px;
-	font-size: 14px;
 	text-align: center;
 	line-height: 40px;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 	top: 6%;
-	margin-top: 0px;
 	padding-top: 2px;
-	font-family: Oswald-Light;
 }
 
 .button a {
+	font-size: 14px;
+	font-family: Oswald-Light;
 	text-decoration: none;
 	color: #ffffff;
 }
+
 
 .button a:hover {
 	text-decoration: none;
@@ -239,7 +239,7 @@ h6, .font {
 	margin-top: 135px;
 }
 
-#hewett_st_1{
+#hewett_st_1 {
 	background-image: url(hewett_street_1.jpg);
 	display: inline-block;
 	height: 305px;
@@ -248,7 +248,7 @@ h6, .font {
 	float: left;
 }
 
-#hewett_st_2{
+#hewett_st_2 {
 	background-image: url(hewett_street_2.jpg);
 	display: inline-block;
 	height: 305px;

@@ -15,7 +15,7 @@
 	<% @photos.each do |img| %>
 		<li>
 			<div class="image">	
-				<%= link_to filepicker_image_tag(img.image, width: "700", height: "450", fit: 'clip'), photo_path(img) %>
+				<%= link_to filepicker_image_tag(img.filepicker_url, width: "700", height: "450", fit: 'clip'), photo_path(img) %>
 			</div>
 			
 			<div class="image_info">
