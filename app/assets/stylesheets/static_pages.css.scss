@@ -21,7 +21,7 @@ p {
 
 
 h3 {
-	font-family: Oswald-Light;
+	font-family: 'oswaldlight';
 	text-align: center;
 	font-size: 21px;
 	margin-top: -10px;
@@ -31,7 +31,7 @@ h3 {
 
 h4 { 
 	text-align: center;
-	font-family: EB Garamond;
+	font-family: 'adobe_garamond_proregular';
 	font-size: 18px;
 	font-style: italic;
 	font-weight: normal;
@@ -40,7 +40,7 @@ h4 {
 
 
 h6, .font {
-	font-family: Oswald-Light;
+	font-family: 'oswaldlight';
 	text-align: center;
 	font-size: 20px;
 	margin: 0px;
@@ -162,16 +162,15 @@ h6, .font {
 
 
 @font-face {
-    font-family: 'oswaldlight';
-    src: font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.eot');
-    src: font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.eot+?#iefix') format('embedded-opentype'),
-         font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.woff') format('woff'),
-         font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.ttf') format('truetype'),
-         font-url('https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.svg#oswaldlight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: oswaldlight;
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.eot);
+  src: url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.eot?#iefix) format("embedded-opentype"), 
+url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.woff) format("woff"),
+ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.ttf) format("truetype"), 
+url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.svg#oswaldlight) format("svg"); }
 
-}
 
 .button {
 	background-color: rgba(0, 0, 0, 0.8);
@@ -216,7 +215,7 @@ h6, .font {
 
 #six p { 
 	text-align: center;
-	font-family: EB Garamond;
+	font-family: 'adobe_garamond_proregular';
 	font-size: 15px;
 	font-style: italic;
 }
@@ -319,7 +318,7 @@ h6, .font {
 
 #description p {
 	text-align: center;
-	font-family: EB Garamond;
+	font-family: 'adobe_garamond_proregular';
 	font-size: 16px;
 	font-style: italic;
 	margin-top: 25px;
@@ -351,7 +350,7 @@ h6, .font {
 
 
 #navigation a {
-	font-family: Oswald-Light;
+	font-family: 'oswaldlight';
 	font-size: 40px;
 	font-style: none;
 	color: #000000;
@@ -391,7 +390,7 @@ h6, .font {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 50px;
-	font-family: EB Garamond;
+	font-family: 'adobe_garamond_proregular';
 	font-size: 18px;
 	font-style: italic;
 	font-weight: normal;
@@ -496,7 +495,7 @@ h6, .font {
 	text-align: center;
 	margin: auto;
 	padding-top: 50px;
-	font-family: EB Garamond;
+	font-family: 'adobe_garamond_proregular';
 	font-size: 18px;
 	font-style: italic;
 	font-weight: normal;
