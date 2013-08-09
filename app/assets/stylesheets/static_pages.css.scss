@@ -149,10 +149,28 @@ h6, .font {
 
 
 @font-face {
-	font-family: Oswald-Light; 
-		src: url('Oswald-Light.otf');
-	font-family: Adobe-Garamond-Pro;
-		src: url('Adobe-Garamond-Pro.ttf')
+    font-family: 'adobe_garamond_proregular';
+    src: url('adobe-garamond-pro-webfont.eot');
+    src: url('adobe-garamond-pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('adobe-garamond-pro-webfont.woff') format('woff'),
+         url('adobe-garamond-pro-webfont.ttf') format('truetype'),
+         url('adobe-garamond-pro-webfont.svg#adobe_garamond_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('oswald-light-webfont.eot');
+    src: url('oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('oswald-light-webfont.woff') format('woff'),
+         url('oswald-light-webfont.ttf') format('truetype'),
+         url('oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .button {
