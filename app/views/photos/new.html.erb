@@ -1,0 +1,33 @@
+<section id="form_container">
+
+	<div id="form">
+		<h4>
+			Upload you forest image here.
+		</h4>
+	
+		<div class="fields">
+			<%= simple_form_for @photo do |f| %>
+		  	<%= f.input :first_name, placeholder: "First name", label:false %>
+			<%= f.input :last_name, placeholder: "Last name", label:false %>
+			<%= f.input :country, prompt: "Choose your country", label:false %> 
+			<%= f.input :city, placeholder: "City", label:false %>	
+			<%= f.input :twitter, placeholder: "Twitter handle", label:false %>	
+			<%= f.input :website_url, placeholder: "Website url", label:false %>
+			<%= f.input :email_address, placeholder: "Email address", label:false %>
+			<%= f.input :image, as: :hidden %>
+		</div>
+
+	
+		<div class="img_upload">
+		    <%= f.label :image, "Choose you image:" %>
+		<input type="filepicker" data-fp-apikey="AlIx-x_WtQKiw5LrCArBpz" data-fp-mimetypes="image/*" data-fp-container="modal" data-fp-services="COMPUTER,FACEBOOK,INSTAGRAM,URL" onchange="$('#photo_image').attr('value', event.fpfile.url);">
+		  </div>
+	
+		<div class="submit_button">
+		  <%= f.submit(value:"Submit") %>
+		<% end %>
+		</div>
+
+	</div>
+
+</section>

@@ -1,0 +1,43 @@
+$(document).ready(function() {
+
+	$(document).on("mouseover mouseout", ".image", function() {
+		$(this).next(".image_info").toggleClass("active");
+	});
+
+	$(".scroll").click(function(event){
+    	 event.preventDefault();
+	     //calculate destination place
+	     var dest=0;
+	     if($(this.hash).offset().top > $(document).height()-$(window).height()){
+	          dest=$(document).height()-$(window).height();
+	     }else{
+	          dest=$(this.hash).offset().top;
+	     }
+	     //go to destination
+	     $('html,body').animate({scrollTop:dest}, 700,'swing');
+ 	});
+
+
+	//Infinite Scroll
+       $( '#list ul' ).infinitescroll({
+               behavior: 'local',
+               navSelector: ".pagination",
+               nextSelector: ".next_page",
+               itemSelector: "#list ul li",
+               extraScrollPx: 100,
+               animate: true,
+               bufferPx: 500,
+				loading: {
+			        finished: undefined,
+			        finishedMsg: "<em>No more photographs</em>",
+			       	img: "https://s3-eu-west-1.amazonaws.com/forest-gallery/images/loader.gif",
+					msg: null,
+			        msgText: "<em>Loading more photographs...</em>",
+			        selector: null,
+			        speed: 'fast',
+			        start: undefined
+			    }
+       });
+
+
+});

@@ -1,0 +1,33 @@
+
+<div id="container">
+
+	<div id="single_img">
+
+		<%= image_tag(@photo.image, alt:  @photo.first_name, class:"image_output", width:"900", height:"600") %>
+	</div>
+		
+	
+	<div id="description">
+		<h4>
+			<%= @photo.first_name %> <%= @photo.last_name %>
+		</h4>
+		<br>
+		<h6>
+			<%= @photo.city %>, <%=  @photo.country %>
+		</h6>
+	</div>
+
+	
+	<div id="navigation">
+		<div class="previous">
+			<%= link_to "<", photo_path(@previous) unless @previous.blank? %>
+		</div>
+		<div class="next">
+			<%= link_to ">", photo_path(@next) unless @next.blank? %>
+		</div>
+		
+	</div>
+	
+
+
+</div>
