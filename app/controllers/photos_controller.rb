@@ -1,5 +1,8 @@
 class PhotosController < ApplicationController
 
+  respond_to :html
+  layout "application"
+  
   def index
     @photos = Photo.where(published: true).paginate(:page => params[:page], :per_page => 2).order("created_at DESC")
   end
