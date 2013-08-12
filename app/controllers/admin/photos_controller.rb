@@ -6,7 +6,7 @@ class Admin::PhotosController < ApplicationController
   layout "admin"
   
   def index
-    @photos = Photo.paginate(:page => params[:page], :per_page => 2).order("created_at DESC")
+    @photos = Photo.paginate(:page => params[:page], :per_page => 6).order("created_at DESC")
   end
   
   def new

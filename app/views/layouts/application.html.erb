@@ -13,8 +13,11 @@
 <body>
 	<div id="main">
 		<%= render "layouts/header"%>
-		<p class="notice"><%= notice %></p>
-		<p class="alert"><%= alert %></p>		
+		
+		<% if !current_page?(root_url)%>
+			<p class="notice"><%= notice %></p>
+			<p class="alert"><%= alert %></p>
+		<% end %>
 		<%= yield %> 
 		<%= render "layouts/footer"%>
 	</div>
