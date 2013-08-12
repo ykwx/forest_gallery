@@ -38,7 +38,7 @@ gem 'country_select'
 gem 'jbuilder', '~> 1.2'
 
 # Devise login
-gem "devise", "~> 3.0.0.rc"
+gem "devise", "3.0.0.rc"
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

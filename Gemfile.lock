@@ -37,11 +37,11 @@ GEM
       execjs
     coffee-script-source (1.6.3)
     country_select (1.2.0)
-    devise (3.0.2)
+    devise (3.0.0.rc)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
-      warden (~> 1.2.3)
+      warden (~> 1.2.1)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -129,7 +129,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   country_select
-  devise (~> 3.0.0.rc)
+  devise (= 3.0.0.rc)
   filepicker-rails
   jbuilder (~> 1.2)
   jquery-rails
