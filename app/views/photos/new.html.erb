@@ -23,10 +23,9 @@
 		<input type="filepicker" data-fp-apikey="AlIx-x_WtQKiw5LrCArBpz" data-fp-mimetypes="image/*" data-fp-container="modal" data-fp-services="COMPUTER,FACEBOOK,INSTAGRAM,URL" onchange="$('#photo_image').attr('value', event.fpfile.url);">
 		  </div>
 	
-		<div class="submit_button">
-		  <%= f.submit(value:"Submit") %>
+		<%= f.submit(class: "submit", value:"SUBMIT") %>
 		<% end %>
-		</div>
+	
 
 	</div>
 
