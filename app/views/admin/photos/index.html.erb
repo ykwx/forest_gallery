@@ -1,0 +1,53 @@
+<section id="container">	
+	<h1>
+		ADMIN PANEL
+	</h1>
+
+	<table class="nav_bar">
+		<td>
+		<%= link_to "HOME PAGE", root_url %>
+		</td>
+		<td>
+		<%= link_to "PHOTOS PAGE", photos_path %>
+		</td>
+
+	</table>
+	
+	<table id="list">
+	
+		<% @photos.each do |img| %>
+			<tr>	
+				<td>	
+					<%= link_to image_tag("#{img.image}/convert?w=220&h=140&fit=scale"), photo_path(img) %>
+				</td>			
+						<td>	
+							<%= img.first_name %>
+							<%= img.last_name %>
+						</td>
+						<td>	
+							<%= img.city %>,
+							<%= img.country %>
+						</td>
+						<td>
+							<%= img.email_address %>
+							<%= img.website_url %>
+							<%= img.twitter %>
+						</td>
+						
+						<td>
+							<div class="onoffswitch">
+							    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" 			id="myonoffswitch" checked>
+							    <label class="onoffswitch-label" for="myonoffswitch">
+							        <div class="onoffswitch-inner"></div>
+							        <div class="onoffswitch-switch"></div>
+							    </label>
+							</div>
+						</td>
+						
+				
+			</tr>
+		<% end %>	
+	</table>	
+	
+		
+</section>
