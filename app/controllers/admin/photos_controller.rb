@@ -1,6 +1,6 @@
 class Admin::PhotosController < ApplicationController
 
-  respond_to :html
+  respond_to :html, :json
   layout "admin"
   
   def index
@@ -22,6 +22,7 @@ class Admin::PhotosController < ApplicationController
   
   def show
     @photo = Photo.find(params[:id])
+    @photo.update_attributes(published: true) 
   end
   
   def edit
@@ -42,6 +43,5 @@ class Admin::PhotosController < ApplicationController
   def photo_params
     params.require(:photo).permit(:first_name, :last_name, :country, :city, :twitter, :website_url, :email_address, :image, :filepicker_url)
   end
-
 
 end
