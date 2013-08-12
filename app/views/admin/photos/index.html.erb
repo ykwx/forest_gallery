@@ -10,8 +10,12 @@
 			<td>
 			<%= link_to "PHOTOS PAGE", photos_path %>
 			</td>
-
+			<td> 
+			<%=	link_to "LOG OUT", destroy_user_session_path, :method => :delete %> 
+			</td>
 		</table>
+		
+		
 	</div>
 
 	
