@@ -94,14 +94,22 @@ td {
 //////////// Button ////////////
 
 .item {
-	color: red;
+	color: #ffffff;
+	font-family: 'oswald-light';
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px;
+	background-color: #999999;
 }
 
 .item.active {
-	color: blue;
+	background-color: blue;
 }
 
-
+.item a:hover {
+	text-decoration: none;
+	opacity: 0.5;
+}
 
 
 

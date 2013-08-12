@@ -17,6 +17,7 @@
 	
 		<table id="list">
 			<thead>
+			<th>IMAGE ID</th>
 			<th>PHOTOGRAPH</th>
 			<th>NAME</th>
 			<th>LOCATION</th>
@@ -27,10 +28,14 @@
 			<% @photos.each do |img| %>
 				
 				<tr id="<%= img.id %>">	
-					<td>	
-						<%= link_to image_tag("#{img.image}/convert?w=220&h=140&fit=scale"), photo_path(img) %>
-					</td>
-								
+							<td>
+								<%= img.id %>
+							</td>
+					
+							<td>	
+								<%= link_to image_tag("#{img.image}/convert?w=220&h=140&fit=scale"), photo_path(img) %>
+							</td>
+	
 							<td>	
 								<%= img.first_name %>
 								<%= img.last_name %>
@@ -47,7 +52,7 @@
 						
 							<td class="publish">
 								
-								<%= link_to img.published? ? "yes" : "no", admin_photo_path(img), remote: true, class: "item #{'active' if img.published? }" %>
+								<%= link_to img.published? ? "Published" : "Pending", admin_photo_path(img), remote: true, class: "item #{'active' if img.published? }" %>
 								
 								
 
