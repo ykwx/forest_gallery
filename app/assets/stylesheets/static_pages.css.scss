@@ -669,7 +669,7 @@ h7 {
         /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
         #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
 
-        #cboxClose{position:absolute; bottom:0; right:0; background:url(controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
         #cboxClose:hover{background-position:-25px -25px;}
 
 /*
