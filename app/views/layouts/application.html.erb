@@ -7,6 +7,7 @@
 	<%= javascript_include_tag "application" %>
 	<%= csrf_meta_tags %>
 	<%= filepicker_js_include_tag %>
+	<%= favicon_link_tag %>
 
 </head>
 
@@ -14,7 +15,7 @@
 	<div id="main">
 		<%= render "layouts/header"%>
 		
-		<% if !current_page?(root_url)%>
+		<% if current_page?(new_user_session_path)%>
 			<p class="notice"><%= notice %></p>
 			<p class="alert"><%= alert %></p>
 		<% end %>
