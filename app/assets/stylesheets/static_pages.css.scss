@@ -16,7 +16,7 @@ p {
 	text-align: center;
 	font-family: 'Cabin Condensed', sans-serif;
 	font-size: 13px;
-	line-height: 1.3em;
+	line-height: 1.4em;
 }
 
 
@@ -202,7 +202,7 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 #box {
 	background-color: rgba(255, 255, 255, 0.8);
 	height: 150px;
-	width: 520px;
+	width: 480px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -433,13 +433,13 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 	left: 0px;
 	opacity: 0.8;
 	height: 450px;
-	width: 700px;
+	width: 100%;
 }
 
 .image_info {
 	text-align: center;
 	display: table-row;
-	width: 700px;
+	width: auto;
 	height: 450px;
 	background: rgba(255, 255, 255, 0.6);
 	pointer-events: none;

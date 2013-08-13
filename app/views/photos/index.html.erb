@@ -2,7 +2,7 @@
 <section id="seven">
 	
 	<p>
-		A project to collect and curate some of the best in <br> woodland photography from around the world.
+		A project to collect and curate woodland<br> photography from around the world.
 	</p>
 	
 </section>
@@ -15,7 +15,7 @@
 	<% @photos.each do |img| %>
 		<li>
 			<div class="image">	
-				<%= link_to image_tag("#{img.image}/convert?w=700&h=450&fit=scale"), photo_path(img) %>
+				<%= link_to image_tag("#{img.image}/convert?&h=450&fit=scale"), photo_path(img) %>
 			</div>
 			
 			<div class="image_info">
