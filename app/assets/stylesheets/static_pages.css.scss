@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
+
 
 body {
 	margin: auto;
@@ -22,7 +24,8 @@ p {
 
 
 h3 {
-	font-family: 'oswaldlight';
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
 	text-align: center;
 	font-size: 21px;
 	margin-top: -10px;
@@ -43,7 +46,7 @@ h4 {
 
 
 h6, .font {
-	font-family: 'oswaldlight';
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
 	font-size: 20px;
 	margin: 0px;
@@ -55,10 +58,11 @@ h6, .font {
 }
 
 h8 {
-	font-family: 'oswaldlight';
+	font-family: 'Oswald', sans-serif;
 	text-align: center;
 	font-size: 14px;
-	color: #ffffff;	
+	color: #ffffff;
+	font-weight: 300;	
 }
 
 
@@ -173,7 +177,7 @@ h8 {
 
 
 @font-face {
-  font-family: 'oswaldlight';
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-style: normal;
   src: url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-webfont.eot);
@@ -198,7 +202,7 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 
 .button a {
 	font-size: 14px;
-	font-family: 'oswaldlight';
+	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
 	color: #ffffff;
 }
@@ -363,7 +367,7 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 
 
 #navigation a {
-	font-family: 'oswaldlight';
+	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	font-style: none;
 	color: #202020;
@@ -539,7 +543,7 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 	text-align:center;
 	display: block;
 	margin: auto;
-	font-family: 'oswaldlight';
+	font-family: 'Oswald', sans-serif;
 	font-size: 14px;
 	color: #ffffff;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -599,7 +603,7 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 .sign_in {
 	border: none;
 	color: #ffffff;
-	font-family: 'oswaldlight';
+	font-family: 'Oswald', sans-serif;
 	font-size: 14px;
 }
 
