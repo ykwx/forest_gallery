@@ -10,7 +10,10 @@ TestApp::Application.routes.draw do
     root to: "photos#index"
   end
   
-  root to: "static_pages#index"
+  get "live", to: "static_pages#index"
+  
+  # root to: "static_pages#index"
+  root to: "static_pages#holding"
   
   
 end
