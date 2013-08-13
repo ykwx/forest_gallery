@@ -1,6 +1,6 @@
 class Admin::UsersController < ApplicationController
   
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
   
   respond_to :html, :json
   layout "admin"

@@ -40,6 +40,9 @@ gem 'jbuilder', '~> 1.2'
 # Devise login
 gem "devise", "3.0.0.rc"
 
+# Ruby Racer 
+gem "therubyracer", "~> 0.11.4"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

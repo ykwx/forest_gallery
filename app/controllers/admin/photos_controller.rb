@@ -1,6 +1,6 @@
 class Admin::PhotosController < ApplicationController
 
-  # before_action :authenticate_user!
+  before_action :authenticate_user!
   
   respond_to :html, :json
   layout "admin"
