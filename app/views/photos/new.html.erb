@@ -7,9 +7,9 @@
 	
 		<div class="fields">
 			<%= simple_form_for @photo do |f| %>
-		  	<%= f.input :first_name, placeholder: "First name", label:false %>
-			<%= f.input :last_name, placeholder: "Last name", label:false %>
-			<%= f.input :country, prompt: "Choose your country", label:false %> 
+		  	<%= f.input :first_name, placeholder: "First name", label:false, required:true %>
+			<%= f.input :last_name, placeholder: "Last name", label:false, required:true%>
+			<%= f.input :country, prompt: "Choose your country", label:false, required:true %> 
 			<%= f.input :city, placeholder: "City", label:false %>	
 			<%= f.input :twitter, placeholder: "Twitter handle", label:false %>	
 			<%= f.input :website_url, placeholder: "Website url", label:false %>
@@ -23,7 +23,7 @@
 		<input type="filepicker" data-fp-apikey="AlIx-x_WtQKiw5LrCArBpz" data-fp-mimetypes="image/*" data-fp-container="modal" data-fp-services="COMPUTER,FACEBOOK,INSTAGRAM,URL" onchange="$('#photo_image').attr('value', event.fpfile.url);">
 		  </div>
 	
-		<%= f.submit(class: "submit", value:"SUBMIT") %>
+		<%= f.submit(class: "submit", value:"SUBMIT", :alert => 'Thank you for submitting you forest photograph.') %>
 		<% end %>
 	
 		<a class="terms" href="#window_content"> <strong>Terms & Conditions</strong></a>
@@ -32,3 +32,4 @@
 	</div>
 
 </section>
+
