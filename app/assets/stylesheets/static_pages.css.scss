@@ -349,9 +349,10 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 
 #description h4 {
 	padding-top: 20px;
-	padding-bottom: 5px;
 	margin: 0px;
 }
+
+
 
 .image_output {
 	max-width: 100%;
@@ -362,14 +363,15 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 	opacity: 0.9;
 }
 
-#container {
+#image_container {
 	text-align: center;
 	margin: auto;
-	height: 620px;
+	height: 100%;
 	width: 960px;
 	background-color: #f5f5f5;
 	position: relative;
 	margin-top: -15px;
+	padding-bottom: 60px;
 }
 
 
@@ -390,12 +392,12 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 
 .next a {
 	display: inline-block;
-	right: 40px;
+	right: 20px;
 }
 
 .previous a {
 	display: inline-block;
-	left: 40px;
+	left: 20px;
 }
 
 

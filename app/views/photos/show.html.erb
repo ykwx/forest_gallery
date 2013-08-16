@@ -1,20 +1,18 @@
 
-<div id="container">
+<div id="image_container">
 
 	<div id="single_img">
 
-		<%= image_tag(@photo.image, alt:  @photo.first_name, class:"image_output", width:"auto", height:"520") %>
+		<%= image_tag(@photo.image, alt:  @photo.first_name, class:"image_output", width:"840", height:"auto") %>
 	</div>
 		
 	
 	<div id="description">
 		<h4>
 			<%= @photo.first_name %> <%= @photo.last_name %>
-		</h4>
 		<br>
-		<h6>
-			<%=  @photo.country %>
-		</h6>
+		<span class="font"><%=  @photo.country %></span>
+		</h4>
 	</div>
 
 	
