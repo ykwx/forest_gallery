@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 	$(document).on("mouseover mouseout", ".image", function() {
-		$(this).next(".image_info").toggleClass("active");
+		$(this).children(".image_info").toggleClass("active");
 	});
 
 	$(".scroll").click(function(event){

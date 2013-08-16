@@ -6,7 +6,8 @@
 	</p>
 	
 </section>
-	
+
+<section>	
 
 <div id="list">
 	
@@ -15,10 +16,8 @@
 	<% @photos.each do |img| %>
 		<li>
 			<div class="image">	
-				<%= link_to image_tag("#{img.image}/convert?&h=450&fit=scale"), photo_path(img) %>
-			</div>
-			
-			<div class="image_info">
+				<%= link_to image_tag("#{img.image}/convert?&w=720&fit=clip"), photo_path(img) %>
+				<div class="image_info">
 				<h4>
 					<%= img.first_name %>
 					<%= img.last_name %>
@@ -26,6 +25,9 @@
 					<span class="font"><%= img.country %></span>
 				</h4>
 			</div>	
+			</div>
+			
+			
 		</li>
 	
 	
@@ -36,3 +38,5 @@
 	<%= will_paginate @photos %>
 	
 </div>	
+
+</section>
