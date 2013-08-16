@@ -9,11 +9,11 @@
 			<%= simple_form_for @photo do |f| %>
 		  	<%= f.input :first_name, placeholder: "First name", label:false, required:true %>
 			<%= f.input :last_name, placeholder: "Last name", label:false, required:true%>
-			<%= f.input :country, prompt: "Choose your country", label:false, required:true %> 
+			<%= f.input :country, prompt: "Choose your country", label:false %> 
 			<%= f.input :city, placeholder: "City", label:false %>	
 			<%= f.input :twitter, placeholder: "Twitter handle", label:false %>	
 			<%= f.input :website_url, placeholder: "Website url", label:false %>
-			<%= f.input :email_address, placeholder: "Email address", label:false, required:true %>
+			<%= f.input :email_address, placeholder: "Email address", label:false %>
 			<%= f.input :image, as: :hidden %>
 		</div>
 
