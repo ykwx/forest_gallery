@@ -360,7 +360,18 @@ url(https://s3-eu-west-1.amazonaws.com/forest-gallery/images/Fonts/oswald-light-
 	text-align: center;
 	margin: auto;
 	margin-top: 60px;
+		
+		@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+{
+	max-width: 250px;
+	max-height: auto;
+	text-align: center;
+	margin: auto;
+	margin-top: 60px; }
 }
+
 
 #image_container {
 	text-align: center;
