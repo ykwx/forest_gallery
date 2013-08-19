@@ -23,7 +23,7 @@
 		<input type="filepicker" data-fp-apikey="AlIx-x_WtQKiw5LrCArBpz" data-fp-mimetypes="image/*" data-fp-container="modal" data-fp-maxsize="2097152" data-fp-services="COMPUTER,FACEBOOK,INSTAGRAM,URL" onchange="$('#photo_image').attr('value', event.fpfile.url);">
 		  </div>
 	
-		<%= f.submit(class: "submit", value:"SUBMIT", onclick: "alert('Thank you for submitting your forest photograph.')") %>
+		<%= f.submit(class: "submit", value:"SUBMIT", onclick: "alert('Thank you for submitting your forest photograph.<br> Once we've approved it it will show in the image gallery.')") %>
 		<% end %>
 	
 		<a class="terms" href="#window_content"> <strong>Terms & Conditions</strong></a>
