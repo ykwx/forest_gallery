@@ -23,8 +23,8 @@ class PhotosController < ApplicationController
   def show
     @photo = Photo.find(params[:id])
     @last = Photo.last
-    @next = Photo.find(@photo.id + 1) unless @photo.id == @last.id
-    @previous = Photo.find(@photo.id - 1) unless @photo.id == 1
+    @next = Photo.where("id > ?", @photo.id).where(published: true).pluck(:id).first
+    @previous = Photo.where("id < ?", @photo.id).where(published: true).pluck(:id).last
   end
   
   def edit
