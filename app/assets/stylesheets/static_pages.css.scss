@@ -366,7 +366,7 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) 
 {
 	max-width: auto;
-	max-height: auto;
+	max-height: 400px;
 	text-align: center;
 	margin: auto;
 	margin-top: 60px; }
