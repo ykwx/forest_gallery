@@ -12,8 +12,8 @@ TestApp::Application.routes.draw do
   
   get "live", to: "static_pages#index"
   
-  # root to: "static_pages#index"
-  root to: "static_pages#holding"
+  root to: "static_pages#index"
+  # root to: "static_pages#holding"
   
   
 end
