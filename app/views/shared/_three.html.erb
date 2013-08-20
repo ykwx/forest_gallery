@@ -9,7 +9,7 @@
 		<% @photos.each do |img| %>
 	
 			<div class="recent">
-				<%= link_to image_tag(img.image, alt: img.first_name, width:"350", height:"200"), photo_path(img) %>
+				<%= link_to image_tag("#{img.image}/convert?&w=304&h=200&fit=crop"), photo_path(img) %>
 			</div>
 		
 		<% end %>
